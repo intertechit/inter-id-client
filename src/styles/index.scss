@@ -1,0 +1,39 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
+@import "./game-dark-style.scss";
+@import "./game-light-style.scss";
+
+.user-yorum-editable {
+  width: 100%;
+  height: 100%;
+  margin-top: 10px;
+  background-color: #e8c6a4;
+  border-color: #503823;
+  &:focus {
+    background-color: #e8c6a4;
+  }
+}
+
+.comment-editable-link {
+  font-size: small;
+  color: #c9c9c9;
+  background-color: transparent;
+  border: none;
+  text-decoration: underline;
+  &:hover {
+    color: #c9c9c9;
+    text-decoration: none;
+  }
+}
+
+.light {
+  .comment-editable-link {
+    color: black;
+  }
+
+  .user-yorum-editable {
+    background-color: #cccccc;
+    &:focus {
+      background-color: #cccccc;
+    }
+  }
+}
